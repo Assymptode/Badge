@@ -1,0 +1,144 @@
+body {
+    background: #f4f4f5;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h1, h2, p, a {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    div {
+        display: flex;
+        gap: 18px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    max-width: 1024px;
+}
+
+button {
+    background: blue;
+    height: 50px;
+    padding: 0 32px;
+    border-radius: 14px;
+    color: white;
+} 
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 340px;
+    background: white;
+    border-radius: 24px;
+    max-width: 1024px;
+
+    h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+#filterAndCards {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+#filter {
+    width: 360px;
+    height: 500px;
+    background: red;
+    border-radius: 24px;
+}
+
+#cards {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    gap: 12px;
+}
+
+.grey {
+    color: grey
+}
+
+.centered
+{
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap {
+    gap: 5px;
+}
+
+.card {
+    width: calc(100% / 3 - 8px);
+    height: 200px;
+    border-radius: 24px;
+    background: white;
+    position: relative;
+}
+
+.badge {
+    width: 95px;
+    height: 30px;
+    background-color: blueviolet;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: rotate(20deg);
+}
+
+.topleft {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.bottomleft
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.goodchild > * {
+    padding: 5px;
+    font-size: 12px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
